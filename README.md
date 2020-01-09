@@ -21,7 +21,8 @@ Extract Fast(Features from Accelerated Segment Test) and rotation brief feature.
 1. Select a pixel P from the picture. Then we will determine whether it is a feature point. We first set its brightness value to Ip.
 2. Set an appropriate threshold t.
 3. Consider a discrete Bresenham circle with a radius equal to 3 pixels centered on the pixel point. There are 16 pixels on the boundary of the circle (as shown in Figure below).
-[](https://github.com/zlf1993/ar_model/blob/master/pictures/FAST.png)
+[](https://github.com/zlf1993/ar_model/blob/master/)
+![avatar](/pictures/FAST.png1.png)
 Figure 1. Schematic diagram of FAST feature points
 4. Now, if there are n consecutive pixels on this 16-pixel circle, their pixel values ​​are either larger than Ip + t or smaller than Ip−t, then it is a corner point.
 
