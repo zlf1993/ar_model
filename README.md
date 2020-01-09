@@ -26,7 +26,9 @@ Select a pixel P from the picture. Then we will determine whether it is a featur
 Set an appropriate threshold t.
 
 Consider a discrete Bresenham circle with a radius equal to 3 pixels centered on the pixel point. There are 16 pixels on the boundary of the circle (as shown in Figure below).
+
 ![avatar](./Pictures/FAST.png)
+
 Figure 1. Schematic diagram of FAST feature points
 
 Now, if there are n consecutive pixels on this 16-pixel circle, their pixel values ​​are either larger than Ip + t or smaller than Ip−t, then it is a corner point.
@@ -34,6 +36,7 @@ Now, if there are n consecutive pixels on this 16-pixel circle, their pixel valu
 #### Detect the platform(background)
 
 We need to find the mapping relationship with the target picture according to the sample background picture, and then determine a transformation matrix. This operation is called Homography, try to build homography matrix, it connect background card coordinate to camera pixel system.
+
 ![avatar](./Pictures/H.jpg)
 
 
